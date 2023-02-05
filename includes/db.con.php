@@ -12,5 +12,7 @@ $dbName = "SAFootwear_Db";
 $conn = mysqli_connect($serverName, $dbUserame, $dbPassword, $dbName);
 if (mysqli_connect_errno($conn)) {
   echo "Failed to connect";
+} else{
+  echo"database is not in operation";
 }
  ?>
