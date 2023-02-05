@@ -8,7 +8,7 @@ $serverName = "localhost";
 $dbUserame = "root";
 $dbPassword = "";
 $dbName = "SAFootwear_Db";
-
+// db test conn 
 $conn = mysqli_connect($serverName, $dbUserame, $dbPassword, $dbName);
 if (mysqli_connect_errno($conn)) {
   echo "Failed to connect";
