@@ -9,7 +9,7 @@ $dbUserame = "root";
 $dbPassword = "";
 $dbName = "SAFootwear_Db";
 // db test conn 
-$conn = new PDO("mysql:host=$host; dbname= $dbName", "$dbUserame", "$dbPassword");
+$conn = new PDO("mysql:host=$serverName; dbname= $dbName", "$dbUserame", "$dbPassword");
 if ($$conn == true) {
   echo "database is working fine";
 } else{
