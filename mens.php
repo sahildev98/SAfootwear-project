@@ -1,16 +1,16 @@
 <?php include 'template-header.php';
 
-require 'includes/db.con.php';
+// require 'includes/db.con.php';
 
-$query = 'SELECT * FROM products';
+// $query = 'SELECT * FROM products';
 
-$result = mysqli_query($conn, $query);
+// $result = mysqli_query($conn, $query);
 
-$row = mysqli_fetch_assoc($result);
-// var_dump($row);
-mysqli_free_result($result);
+// $row = mysqli_fetch_assoc($result);
+// // var_dump($row);
+// mysqli_free_result($result);
 
-mysqli_close($conn);
+// mysqli_close($conn);
 ?>
 <html>
   <head lang="en-GB" dir="ltr">
