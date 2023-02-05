@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+
+/* Psuedo classes used */
+button:hover, button:focus {
+  text-decoration: underline;
+  color:#000000;
+  background: #ffffff;
+}
+
+section button:focus {
+  outline: 0px;
+  box-shadow: 2px 2px 8px 8px;
+}
+
+main button:focus {
+  outline: 0px;
+  box-shadow: 2px 2px 8px 8px #ff3300;
+}
+
+a:focus img {
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+main a:focus img {
+  border: 5px solid white;
+  border-radius: 20px;
+}
+/* skip-link */
+
+
+
+/* Section part */
+
+section {
+  background-color: rgb(220, 0, 0);
+  height: 45%;
+}
+
+
+section button  {
+  font-size: 30px;
+  margin-left:220px;
+  border: 4px solid white;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  padding-top:20px;
+  padding: 5px;
+  width:15%;
+  margin-top: 20px;
+}
+
+section h2 {
+  font-size: 30px;
+  padding-top: 30px;
+  color:rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* main content  */
+
+main {
+  background-color: rgb(0, 0, 0);
+}
+
+main h2  {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+}
+
+main img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 70px;
+  height: 700px;
+  width: 500px;
+
+}
+
+main button {
+  font-size: 30px;
+  border: 4px solid white;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 5px;
+  width:20%;
+  margin-left: 70px;
+}
+
+main figure{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+/* aside tag  */
+aside {
+  display: inline-block;
+  margin-top:10vh;
+}
+
+aside figure {
+  display: inline-block;
+  padding-left: 25vh;
+}
+
+aside img:hover {
+  transform: scale(1.2);
+}
+
+img {
+  width:315px;
+  height: 472px;
+}
+
+
+figcaption {
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer{
+  margin-top: 10vh;
+}
+
+/* media queries for laptop */
+
+@media screen and (max-width: 1280px) and (max-height: 700px) {
+  section {
+    height:65%;
+  }
+
+  aside figure {
+    padding-left: 22vh;
+  }
+
+  section button {
+    width: 22%;
+  }
+}

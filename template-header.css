@@ -1,0 +1,58 @@
+/* Template navigation css */
+
+nav a:hover, nav a:focus {
+  text-decoration: underline;
+  color:#000000;
+  background: #ffffff;
+
+}
+
+nav a:focus {
+  outline: 0px;
+  box-shadow: 2px 2px 8px 8px #ff3300;
+}
+
+.skip-link {
+  position: absolute;
+  overflow: hidden;
+  left: -10000px;
+  width:1px;
+  height: 1px;
+  top: auto;
+}
+
+.skip-link:focus {
+  color: black;
+  display: inline-block;
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+
+header {
+  background-color: rgb(0,0,0);
+  height: 20%;
+}
+
+
+a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+
+ul {
+  text-align: center;
+}
+
+
+li {
+  display: inline-block;
+  margin:20px;
+}

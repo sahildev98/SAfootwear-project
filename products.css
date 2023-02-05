@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Section tag elements */
+h2 {
+  text-transform: capitalize;
+  margin-left: 25vh;
+  padding-top: 10px;
+}
+
+/* Psuedo classe ony appllies to mens php due it having achor tag.  */
+a:focus img {
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+
+/* Main tag elements */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+
+figure {
+height: 500px;
+width: 600px;
+padding-top: 10px;
+padding-left: 25vh;
+
+}
+
+
+img {
+  width: 200px;
+  height: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote {
+  padding-top: 10px;
+}
+
+
+figcaption {
+  padding-top: 10px;
+  width: 100%;
+}
+
+/* media queries for laptop */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  figure{
+    width:500px;
+    height:600px;
+  }
+}

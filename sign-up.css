@@ -1,0 +1,44 @@
+/* Default spacing removal */
+*{
+  padding: 0;
+  margin: 0;
+}
+/*Main Content CSS*/
+main h1 {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+/* Form css  */
+main {
+padding-left: 35vh;
+margin-bottom:20vh;
+}
+
+input {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 20%;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Footer spacing due to short content */
+footer {
+  margin-top: 40vh;
+}
+
+/* media queries for laptop */
+@media screen and (min-width: 1280px) and (min-height: 700px){
+  footer {
+  
+  }
+}

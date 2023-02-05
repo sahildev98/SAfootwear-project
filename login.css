@@ -1,0 +1,79 @@
+/* Default spacing removal */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Psuedo classes used */
+button:hover, button:focus {
+  text-decoration: underline;
+  color:#ffffff;
+  background: #000000;
+}
+
+ button:focus {
+  outline: 0px;
+  box-shadow: 2px 2px 8px 8px #ff3300;
+}
+
+/* Login form css */
+main {
+  padding-left: 35vh;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+button {
+  padding-top:20px;
+  padding: 5px;
+  width:5%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+
+main h1{
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+input {
+  display: flex;
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 20%;
+}
+
+section {
+  padding-left: 35vh;
+  padding-bottom: 10px;
+}
+
+section h1 {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+}
+
+section button {
+  margin-top: 10px;
+  padding-top:20px;
+  padding: 5px;
+}
+
+
+/* Footer spacing due to short content */
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-top: 100px;
+}
+
+/* media queries for laptop */
+
+@media screen and (min-width: 1024px) and (min-height: 700px){
+  footer {
+    padding-top:10px;
+  }
+}
