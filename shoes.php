@@ -2,24 +2,24 @@
 include 'template-header.php';
 require 'includes/db.con.php';
 
-if(isset($_GET['ID'])){
-  $id = mysqli_real_escape_string($conn, $_GET['ID']);
+// if(isset($_GET['ID'])){
+//   $id = mysqli_real_escape_string($conn, $_GET['ID']);
 
 
-$query = "SELECT * FROM products WHERE ID = ".$id;
+// $query = "SELECT * FROM products WHERE ID = ".$id;
 
-$result = mysqli_query($conn, $query);
+// $result = mysqli_query($conn, $query);
 
-$row = mysqli_fetch_assoc($result);
-var_dump($row);
-mysqli_fetch_assoc($result);
+// $row = mysqli_fetch_assoc($result);
+// var_dump($row);
+// mysqli_fetch_assoc($result);
 
-mysqli_close($conn);
+// mysqli_close($conn);
 
 
-} else {
-  header("no result");
-}
+// } else {
+//   header("no result");
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
