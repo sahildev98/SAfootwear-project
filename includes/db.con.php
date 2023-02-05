@@ -5,7 +5,7 @@
 // $dbName = "epiz_24779122_SA_FootwearDB";
 
 $serverName = "localhost";
-$dbUserame = "rot";
+$dbUserame = "root";
 $dbPassword = "";
 $dbName = "SAFootwear_Db";
 // db test conn 
