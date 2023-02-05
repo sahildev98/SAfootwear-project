@@ -9,10 +9,10 @@ $dbUserame = "rot";
 $dbPassword = "";
 $dbName = "SAFootwear_Db";
 // db test conn 
-$conn = mysqli_connect($serverName, $dbUserame, $dbPassword, $dbName);
-if (mysqli_connect_errno($conn)) {
-  echo "Failed to connect";
+$conn = new PDO("mysql:host=$host; dbname= $dbName", "$dbUserame", "$dbPassword");
+if ($$conn == true) {
+  echo "database is working fine";
 } else{
-  echo" database is not in operation";
+  echo"Failed to connect";
 }
  ?>
