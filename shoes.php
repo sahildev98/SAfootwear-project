@@ -30,8 +30,8 @@ require 'includes/db.con.php';
   </head>
   <body>
     <h1>Shoes information</h1>
-    <?php echo '<h1>'. $row['productName'].'</h1>'; ?>
+    <!-- <?php echo '<h1>'. $row['productName'].'</h1>'; ?>
     <?php echo'<h2>'. $row['price'].'</h2>'; ?>
-    <?php echo '<img src="data:image/jpg;base64,'.base64_encode($row['image']).'"/>';?>
+    <?php echo '<img src="data:image/jpg;base64,'.base64_encode($row['image']).'"/>';?> -->
   </body>
 </html>
