@@ -11,7 +11,7 @@ $dbName = "SAFootwear_Db";
 // db test conn 
 $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPassword");
 if ($conn == true) {
-  echo "database is working fine";
+  return null;
 } else{
   echo"Failed to connect";
 }
