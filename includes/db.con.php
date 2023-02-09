@@ -14,7 +14,7 @@ $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPas
 $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 } catch(PDOException $e ){
-
+  echo $e-> getMessage();
 }
 if ($conn == true) {
   return null;
