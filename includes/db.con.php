@@ -11,7 +11,7 @@ $dbName = "SAFootwear_Db";
 // db test conn 
 $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPassword");
 // catch errors in PHP
-$conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION)
+$conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 if ($conn == true) {
   return null;
 } else{
