@@ -13,7 +13,7 @@ $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPas
 // catch errors in PHP
 $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-catch(PDOException ){
+catch(PDOException $e ){
 
 }
 if ($conn == true) {
