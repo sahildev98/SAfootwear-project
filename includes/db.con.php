@@ -12,6 +12,10 @@ $dbName = "SAFootwear_Db";
 $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPassword");
 // catch errors in PHP
 $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+catch(){
+
+}
 if ($conn == true) {
   return null;
 } else{
