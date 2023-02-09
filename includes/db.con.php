@@ -4,7 +4,7 @@
 // $dbPassword = "";
 // $dbName = "epiz_24779122_SA_FootwearDB";
 
-$serverName = "localhost";
+try { $serverName = "localhost";
 $dbUserame = "root";
 $dbPassword = "";
 $dbName = "SAFootwear_Db";
@@ -13,7 +13,7 @@ $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPas
 // catch errors in PHP
 $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-catch(PDOException $e ){
+} catch(PDOException $e ){
 
 }
 if ($conn == true) {
