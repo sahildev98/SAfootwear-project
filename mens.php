@@ -13,10 +13,10 @@ require 'includes/db.con.php';
 // mysqli_close($conn);
 
 try {
-  $id = $_GET['id'];
-  $query = prepare("SELECT * FROM PRODUCTS WHERE id ?");
-  
-  
+  $id =$conn->$_GET['id'];
+  $query = $conn-> prepare("SELECT * FROM PRODUCTS WHERE id ?");
+  $query ->execute(array($id));
+  $data = $query->fetchAll(PDO::FETCH_ASSOC);
 } catch(PDOException $e){
   echo $e->getMessage();
 }
