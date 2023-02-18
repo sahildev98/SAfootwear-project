@@ -14,7 +14,8 @@ require 'includes/db.con.php';
 
 try {
   $id = $_GET['id'];
-
+  $query = prepare("SELECT * FROM PRODUCTS WHERE id ?");
+  
   
 } catch(PDOException $e){
   echo $e->getMessage();
