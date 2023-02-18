@@ -16,8 +16,8 @@ try {
   $id = $_GET['id'];
 
   
-} catch{
-
+} catch(PDOException $e){
+  echo $e->getMessage();
 }
 ?>
 <html>
