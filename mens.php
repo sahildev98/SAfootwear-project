@@ -12,14 +12,14 @@ require 'includes/db.con.php';
 
 // mysqli_close($conn);
 
-try {
-  $id =$conn->$_GET['id'];
-  $query = $conn-> prepare("SELECT * FROM PRODUCTS WHERE id ?");
-  $query ->execute(array($id));
-  $data = $query->fetchAll(PDO::FETCH_ASSOC);
-} catch(PDOException $e){
-  echo $e->getMessage();
-}
+// try {
+  $query = ("SELECT * FROM PRODUCTS WHERE id ?");
+  $stmt = $conn->prepare($query);
+  $stmt->execute(['id' => $id]);
+  $data = $query->fetch();
+// } catch(PDOException $e){
+//   echo $e->getMessage();
+// }
 ?>
 <html>
   <head lang="en-GB" dir="ltr">
@@ -37,7 +37,7 @@ try {
   <main id="maincontent">
 
     <figure>
-      <img src="img/men_shoes/brown_suede_shoes.jpg" alt="brown suede shoes"></a>
+      <a href="shoes.php?shoes_ID=<?php echo $data['id']?>"><img src="img/men_shoes/brown_suede_shoes.jpg" alt="brown suede shoes"></a>
       <blockquote><b>&pound;40.00</b></blockquote>
       <figcaption>Brown Suede Shoes</figcaption>
     </figure>

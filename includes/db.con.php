@@ -4,21 +4,25 @@
 // $dbPassword = "";
 // $dbName = "epiz_24779122_SA_FootwearDB";
 
-try { $serverName = "localhost";
+class Dbh{
+$serverName = "localhost";
 $dbUserame = "root";
 $dbPassword = "";
 $dbName = "SAFootwear_Db";
+
 // db test conn 
-$conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPassword");
+protected function connect(){
+  $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPassword");
+}
+
 // catch errors in PHP
 $conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-} catch(PDOException $e ){
-  echo $e-> getMessage();
-}
 if ($conn == true) {
   return null;
 } else{
   echo"Failed to connect";
+}
+
 }
  ?>
