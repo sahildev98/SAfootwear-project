@@ -5,10 +5,10 @@
 // $dbName = "epiz_24779122_SA_FootwearDB";
 
 class Dbh{
-$serverName = "localhost";
-$dbUserame = "root";
-$dbPassword = "";
-$dbName = "SAFootwear_Db";
+private $serverName = "localhost";
+private $dbUserame = "root";
+private $dbPassword = "";
+private $dbName = "SAFootwear_Db";
 
 // db test conn 
 protected function connect(){
