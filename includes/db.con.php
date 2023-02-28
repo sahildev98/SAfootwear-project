@@ -12,7 +12,8 @@ private $dbName = "SAFootwear_Db";
 
 // db test conn 
 protected function connect(){
-  $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPassword");
+  // $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPassword");
+  $dsn = 'mysql:serverName='. $this->host. ';dbname'. $this->dbname;
 }
 
 // catch errors in PHP
