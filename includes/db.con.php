@@ -14,16 +14,18 @@ private $dbName = "SAFootwear_Db";
 protected function connect(){
   // $conn = new PDO("mysql:host=$serverName; dbName= $dbName", "$dbUserame", "$dbPassword");
   $dsn = 'mysql:serverName='. $this->host. ';dbname'. $this->dbname;
+  $pdo = new PDO($dsn, $this->user, $this->pwd);
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  return $pdo;
 }
 
 // catch errors in PHP
-$conn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-if ($conn == true) {
-  return null;
-} else{
-  echo"Failed to connect";
-}
+// if ($conn == true) {
+//   return null;
+// } else{
+//   echo"Failed to connect";
+// }
 
 }
  ?>
